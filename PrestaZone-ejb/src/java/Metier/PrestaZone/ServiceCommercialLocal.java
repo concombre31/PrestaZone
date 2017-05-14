@@ -41,17 +41,17 @@ public interface ServiceCommercialLocal
     
     void supprimerProduit (Produit prod);
 
-     void authentification (String p_login, String p_mp) throws Exceptions.ClientInconnuException;
+    Client authentification (String p_login, String p_mp) throws Exceptions.ClientInconnuException;
      
-     Client creer (String nom ,String prenom, String adresse, String mail, String login, String mp);
+    Client creer (String nom ,String prenom, String adresse, String mail, String login, String mp);
      
-     Client modifier (Client p_cli, String nom ,String prenom, String adresse, String mail, String login, String mp);
+    Client modifier (Client p_cli, String nom ,String prenom, String adresse, String mail, String login, String mp);
      
-     Commande creer (Client leCli, ArrayList<Produit> lesProduits, float montantTot, String etat);
+    Commande creer (Client leCli, ArrayList<Produit> lesProduits, float montantTot, String etat);
      
-     Commande modifier (Commande laCommande,Client leCli, ArrayList<Produit> lesProduits, float montantTot, String etat);
+    Commande modifier (Commande laCommande,Client leCli, ArrayList<Produit> lesProduits, float montantTot, String etat);
      
-     void supprimer (Commande p_commande);
+    void supprimer (Commande p_commande);
 
     Commande AjouterPanier (Client p_cli, Produit p_produit);     
 }   

@@ -68,9 +68,9 @@ public class ServiceCommercial implements ServiceCommercialLocal{
 //GESTION UTILISATEURS
 
     @Override
-    public void authentification (String p_login, String p_mp) throws Exceptions.ClientInconnuException
+    public Client authentification (String p_login, String p_mp) throws Exceptions.ClientInconnuException
     {
-        ClientFacade.authentification(p_login, p_mp);
+        return ClientFacade.authentification(p_login, p_mp);
     }
 
     @Override
