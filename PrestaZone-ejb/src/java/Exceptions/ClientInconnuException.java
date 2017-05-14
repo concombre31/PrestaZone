@@ -11,5 +11,5 @@ package Exceptions;
  * @author Charlie
  */
 public class ClientInconnuException extends Exception {
-
+    
 }
